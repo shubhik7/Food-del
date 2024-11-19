@@ -1,5 +1,6 @@
 import "./ExploreMenu.css";
 import { menu_list } from "../../assets/frontend_assets/assets";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ExploreMenu = ({ category, setCategory }) => {
   return (
@@ -23,7 +24,7 @@ const ExploreMenu = ({ category, setCategory }) => {
               key={index}
               className="explore-menu-list-item"
             >
-              <img
+              <LazyLoadImage
                 className={category === item.menu_name ? "active" : ""}
                 src={item.menu_image}
                 alt=""
