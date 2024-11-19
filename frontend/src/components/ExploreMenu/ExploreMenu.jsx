@@ -1,6 +1,7 @@
 import "./ExploreMenu.css";
 import { menu_list } from "../../assets/frontend_assets/assets";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ExploreMenu = ({ category, setCategory }) => {
   return (
@@ -28,6 +29,7 @@ const ExploreMenu = ({ category, setCategory }) => {
                 className={category === item.menu_name ? "active" : ""}
                 src={item.menu_image}
                 alt=""
+                effect="blur"
               />
               <p>{item.menu_name}</p>
             </div>
