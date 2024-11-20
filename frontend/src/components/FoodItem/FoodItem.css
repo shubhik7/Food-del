@@ -10,6 +10,11 @@
   width: 100%;
   border-radius: 15px 15px 0px 0px;
 }
+.placeholder-food-item-img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  background-color: aliceblue;
+}
 .food-item-info {
   padding: 20px;
 }

@@ -30,6 +30,15 @@
   border-radius: 50%;
   transition: 0.2s;
 }
+.placeholder-menu {
+  width: 7.5vw;
+  height: 7.5vw;
+  min-width: 80px;
+  min-height: 80px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(242, 180, 160);
+}
 .explore-menu-list-item p {
   margin-top: 10px;
   color: #747474;

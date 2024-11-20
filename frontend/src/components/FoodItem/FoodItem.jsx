@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { assets } from "../../assets/frontend_assets/assets";
 import "./FoodItem.css";
 import { StoreContext } from "../../context/StoreContext";
+import LazyImage from "../../LazyImage/LazyImage";
 
 const FoodItem = ({ id, name, price, description, image }) => {
   const { cartItems, addToCart, removeFromCart } = useContext(StoreContext);
@@ -9,7 +10,11 @@ const FoodItem = ({ id, name, price, description, image }) => {
   return (
     <div className="food-item">
       <div className="food-item-img-container">
-        <img className="food-item-img" src={image} alt="food-item-image" />
+        <LazyImage
+          className="food-item-img"
+          src={image}
+          alt="food-item-image"
+        />
         {!cartItems[id] ? (
           <img
             className="add"
