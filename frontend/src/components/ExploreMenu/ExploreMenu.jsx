@@ -30,7 +30,6 @@ const ExploreMenu = ({ category, setCategory }) => {
                 alt=""
               /> */}
               <LazyImage
-                id={item.id}
                 className={category === item.menu_name ? "active" : ""}
                 src={item.menu_image}
                 alt="menu-image"
